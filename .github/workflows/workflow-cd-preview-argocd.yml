@@ -254,8 +254,8 @@ jobs:
           role-to-assume: ${{ steps.environment.outputs.role }}
           role-skip-session-tagging: true
 
-      - name: Destroy
-        uses: cloudposse/github-action-deploy-argocd@0.8.1
+      - name: deploy
+        uses: cloudposse/github-action-deploy-argocd@0.12.0
         if: ${{ steps.deployment.outputs.id != '' }}
         id: deploy
         with:
