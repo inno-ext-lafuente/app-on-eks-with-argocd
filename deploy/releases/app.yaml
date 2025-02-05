@@ -6,6 +6,11 @@ environments:
           default_ingress_domain: dev.plat.innovus-aws.net
           default_alb_ingress_group: default
   preview:
+    values:
+      - platform:
+          region: us-east-1
+          default_ingress_domain: dev.plat.innovus-aws.net
+          default_alb_ingress_group: default
   dev:
   sandbox:
   staging:
